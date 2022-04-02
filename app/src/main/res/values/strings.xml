@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">Temperature Converter</string>
-    <string name="degree_C">Temperature in °C</string>
+    <string name="input_hint">input any number</string>
     <string name="temperature_text">What\'s the temperature today?</string>
     <string name="degree_kelvin">°K (absolute)</string>
     <string name="degree_fahrenheit">°F (Fahrenheit)</string>
     <string name="round_up_temperature">Round up temperature?</string>
     <string name="convert_temperature">convert temperature🌡️ </string>
     <string name="conversion_result">conversion result</string>
+    <string name="c_celsius">°C (Celsius)</string>
 </resources>
