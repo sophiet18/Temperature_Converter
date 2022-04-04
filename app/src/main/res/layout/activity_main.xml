@@ -5,14 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".ActivityMain">
 
     <EditText
         android:id="@+id/temperature_input"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="@string/input_hint"
         android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,7 +76,7 @@
         android:id="@+id/result_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/conversion_result"
+        android:text= ""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/convert_button" />
 

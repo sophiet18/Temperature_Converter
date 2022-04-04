@@ -6,6 +6,5 @@
     <string name="degree_fahrenheit">°F (Fahrenheit)</string>
     <string name="round_up_temperature">Round up temperature?</string>
     <string name="convert_temperature">convert temperature🌡️ </string>
-    <string name="conversion_result">conversion result</string>
     <string name="c_celsius">°C (Celsius)</string>
 </resources>
