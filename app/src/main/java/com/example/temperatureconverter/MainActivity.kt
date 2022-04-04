@@ -3,6 +3,7 @@ package com.example.temperatureconverter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.temperatureconverter.databinding.ActivityMainBinding
+import java.lang.Math.ceil
 
 class ActivityMain : AppCompatActivity() {
 
@@ -18,13 +19,9 @@ class ActivityMain : AppCompatActivity() {
     private fun fahrenheitCelcius() {
         val stringInTextField = binding.temperatureInput.text.toString()
         val temperature = stringInTextField.toDouble()
-        if(temperature == null){
-            binding.resultText.text = ""
-            return
-        }
-        val celciusTemp = temperature + 32/1.8
-        val fahrTemp = temperature -32 / 1.8
-        val kelvTemp = temperature + 273
+        val celciusTemp = ceil(temperature + 32/1.8)
+        val fahrTemp = ceil(temperature -32 / 1.8)
+        val kelvTemp = ceil(temperature + 273)
 
         when (binding.temperatureOptions.checkedRadioButtonId) {
             R.id.option_degree_celcius -> {
